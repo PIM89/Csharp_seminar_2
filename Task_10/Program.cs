@@ -1,10 +1,11 @@
 ﻿string FindTwo(string text)
 {
-    if (text.Length < 3 || text.Length > 3) Console.Write("Введено НЕ трёхзначное число!");
-    else Console.Write($"Вторая цифра этого числа: {text[1]}");
-    return text;
+    string a = "";
+    if (text.Length < 3 || text.Length > 3) a = "Введено НЕ трёхзначное число!";
+    else a = $"Вторая цифра этого числа: {text[1]}";
+    return a;    
 }
 
 Console.Write("Введите трёхзначное число: ");
 string num = Console.ReadLine();
-FindTwo(num);
+Console.WriteLine(FindTwo(num));
